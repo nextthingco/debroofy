@@ -1,9 +1,4 @@
-# Debroofy
+# Debroofy - Docker branch
 
-Builds a Debian 9.0 (Stretch) rootfs. Supported boards:
-
- * [X] CHIP4
- * [ ] CHIP PRO
- * [ ] CHIP Classic
-
+This branch builds a Docker image used to build the Debian rootfs.
 
