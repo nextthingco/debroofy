@@ -18,6 +18,9 @@ echo -n "adding qemu-aarch64-static..."
 cp -va "$(which qemu-aarch64-static)" "${ROOTFS_DIR}"/usr/bin/
 echo "OK"
 
+update-binfmts --display qemu-aarch64
+update-binfmts --enable qemu-aarch64
+
 echo "##########################"
 echo "## ENTER CHROOT         ##"
 echo "##########################"
