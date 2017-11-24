@@ -48,6 +48,9 @@ chmod a+x ${PWD}/usr/sbin/policy-rc.d
 #echo "##########################"
 #LANG=C.UTF-8 chroot "${TMP_DIR}" /bin/bash --login
 
+update-binfmts --display qemu-aarch64
+update-binfmts --enable qemu-aarch64
+
 echo "##########################"
 echo "## ENTER CHROOT         ##"
 echo "##########################"
