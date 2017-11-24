@@ -14,8 +14,8 @@ mkdir -p "${ROOTFS_DIR}"
 /usr/sbin/debootstrap --verbose --foreign --arch ${ARCH} stretch "${ROOTFS_DIR}" http://ftp.us.debian.org/debian
 echo "OK"
 
-echo -n "adding qemy-aarch64-static..."
-cp "$(which qemu-aarch64-static)" "${ROOTFS_DIR}"/usr/bin/
+echo -n "adding qemu-aarch64-static..."
+cp -va "$(which qemu-aarch64-static)" "${ROOTFS_DIR}"/usr/bin/
 echo "OK"
 
 echo "##########################"
