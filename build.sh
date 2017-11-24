@@ -1,4 +1,4 @@
 #!/bin/bash
 
 ./0010-debootstrap.sh
-#./0002-customize.sh
+./0020-customize.sh

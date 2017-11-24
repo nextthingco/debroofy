@@ -1,0 +1,7 @@
+#!/bin/bash
+
+KERNEL_FILE=$2
+KERNEL_VER=$1
+
+echo "Copying dtb..."
+cp /usr/lib/linux-image-${KERNEL_VER}/amlogic/*chip4* /boot/dtb

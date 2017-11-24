@@ -1,0 +1,12 @@
+#!/bin/bash
+
+KERNEL_FILE=$2
+KERNEL_VER=$1
+
+echo "Creating U-Boot kernel image..."
+gunzip <"${KERNEL_FILE}" >/boot/Image
+mkimage -A arm64 -O linux -T kernel -C none -a 0x1080000 -e 0x1080000 -n linux-next -d /boot/Image /boot/uImage
+
+rm /boot/Image
+rm "${KERNEL_FILE}"
+
