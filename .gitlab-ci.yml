@@ -16,7 +16,7 @@ build:
     - docker pull $CONTAINER_IMAGE
     - docker run --rm --privileged 
                  -e DEB_REPO="${DEB_REPO}"
-                 -e DEB_REPO_PUBLIC_KEY="${DEP_REPO_PUBLIC_KEY}"
+                 -e DEB_REPO_PUBLIC_KEY="${DEB_REPO_PUBLIC_KEY}"
                  -e AWS_ACCESS_KEY_ID="${AWS_ACCESS_KEY_ID}"
                  -e AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY}"
                  -e AWS_REGION="${AWS_REGION}"
