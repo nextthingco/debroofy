@@ -7,8 +7,8 @@ PASSWORD="${PASSWORD:-chip}"
 USERNAME="${USERNAME:-chip}"
 HOSTNAME="${USERNAME:-four}"
 
-INPUT="$PWD/debian_${ARCH}_rootfs.tar.gz"
-OUTPUT="$PWD/debian_${ARCH}_rootfs_customized.tar.xz"
+INPUT="$LOCAL_BUILDDIR/debian_${ARCH}_rootfs.tar.gz"
+OUTPUT="$LOCAL_BUILDDIR/debian_${ARCH}_rootfs_customized.tar.xz"
 
 ! [[ -f  "${INPUT}" ]] &&  echo "ERROR: ${INPUT} not found" && exit 1
 

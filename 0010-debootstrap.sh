@@ -3,8 +3,8 @@
 set -e
 
 ARCH=arm64
-ROOTFS_DIR="$PWD/rootfs"
-TAR_FILE="$PWD/debian_${ARCH}_rootfs.tar.gz"
+ROOTFS_DIR="$LOCAL_BUILDDIR/rootfs"
+TAR_FILE="$LOCAL_BUILDDIR/debian_${ARCH}_rootfs.tar.gz"
 
 OUTPUT="${TAR_FILE}"
 
