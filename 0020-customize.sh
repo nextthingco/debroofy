@@ -123,7 +123,7 @@ echo "##########################"
 umount ${PWD}/proc
 umount ${PWD}/sys
 umount ${PWD}/dev/pts
-umount ${PWD}/var/cache/apt
+#umount ${PWD}/var/cache/apt
 rm ${PWD}/usr/sbin/policy-rc.d
 rm ${PWD}/usr/bin/qemu-aarch64-static
 rm -rf ${TMP_DIR}/var/cache/apt/*
