@@ -7,6 +7,7 @@ PASSWORD="${PASSWORD:-chip}"
 USERNAME="${USERNAME:-chip}"
 HOSTNAME="${USERNAME:-four}"
 
+LOCAL_BUILDDIR="${LOCAL_BUILDDIR:-$PWD}"
 INPUT="$LOCAL_BUILDDIR/debian_${ARCH}_rootfs.tar.gz"
 OUTPUT="$LOCAL_BUILDDIR/debian_${ARCH}_rootfs_customized.tar.xz"
 
