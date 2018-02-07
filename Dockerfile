@@ -8,5 +8,8 @@ u-boot-tools \
 libncurses5-dev \
 crossbuild-essential-arm64 dpkg-dev dh-make dh-systemd dkms module-assistant bc \
 git vim \
-reprepro
+reprepro \
+python-pip \
+&& \
+pip install awscli --upgrade
 
